@@ -1,0 +1,24 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+
+# Document extraction
+pymupdf
+python-docx
+pandas
+
+# HTTP client
+httpx
+
+# Vector Database
+chromadb
+
+# Validation
+pydantic
+
+# PostgreSQL
+SQLAlchemy
+psycopg2-binary
+
+# Redis Cache
+redis
