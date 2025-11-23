@@ -25,6 +25,23 @@ Backend untuk aplikasi Document-based Q&A Agent menggunakan RAG (Retrieval Augme
 
 ---
 
+## 🛠 Teknologi yang Digunakan
+
+| Komponen | Teknologi |
+|----------|-----------|
+| Framework Backend | FastAPI (Python) |
+| Vector Database | ChromaDB |
+| Embedding Service | Ebbge-m3 (custom embedding API) |
+| LLM Model | gpt-oss-20b |
+| Metadata Storage | PostgreSQL |
+| Cache | Redis |
+| Document Parsing | PyMuPDF, python-docx, pandas |
+| HTTP Client | HTTPX |
+| Container DB | Docker (PostgreSQL + Redis) |
+| Deployment Test | Local environment |
+
+---
+
 ## 🧱 Arsitektur
 
 ```text
@@ -88,7 +105,7 @@ POST /chat
 }
 ```
 
-### 4) List Documents (NEW)
+### 4) List Documents
 
 ```http
 GET /documents
@@ -102,7 +119,7 @@ GET /documents
 ]
 ```
 
-### 5) Preview File (NEW)
+### 5) Preview File
 
 ```http
 GET /file/{doc_id}
