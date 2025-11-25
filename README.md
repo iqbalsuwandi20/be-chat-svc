@@ -209,12 +209,21 @@ REDIS_DB=0
 
 ---
 
-## 🎯 Update Log Backend
+## 🎯 Status Backend
 
-| Perubahan | Status |
-|-----------|--------|
-| Endpoint `/documents` | DONE |
-| Endpoint preview file `/file/{doc_id}` | DONE |
-| Add list_documents import | DONE |
-| Return metadata in JSON | DONE |
-| Remove print debug & cleanup | DONE |
+Semua ketentuan tugas backend telah diselesaikan:
+
+| Fitur | Status |
+|-------------------|--------|
+| Upload & Extract document | ✔ DONE |
+| Smart Chunking & Embedding | ✔ DONE |
+| Simpan embedding ke ChromaDB | ✔ DONE |
+| Query RAG berbasis doc_id | ✔ DONE |
+| Redis caching respons chat | ✔ DONE |
+| PostgreSQL document metadata | ✔ DONE |
+| Endpoint `/documents` (list dokumen) | ✔ DONE |
+| Endpoint `/file/{doc_id}` (Preview PDF) | ✔ DONE |
+| Perbaikan `list_documents()` return JSON | ✔ DONE |
+| Perbaikan import missing references | ✔ DONE |
+| Membersihkan debug print & komentar | ✔ DONE |
+| Swagger API documentation | ✔ DONE |
